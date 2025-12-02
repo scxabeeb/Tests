@@ -1,0 +1,22 @@
+@page
+@model Add
+@{ViewData[index:"Title"]="Addition Page";}
+<div class="mt-5">
+<div class="card shadow mb-3 p-4">
+<form method="post">
+<div class="mb-3">
+<input type="number" asp-for="Num1" placeholder="Enter Number 1" class="form-control" />
+</div> 
+<div class="mb-3">
+<input type="number" asp-for="Num2" placeholder="Enter Number 2" class="form-control" />
+</div>
+<div class="d-grid">
+<button type="submit" class="btn btn-primary btn-lg">Calculate</button>
+</div>
+</form> 
+<div class="alert alert-success mt-3 text-center">
+<h3>Result:@Model.Result</h3>
+</div>
+      
+</div>
+</div>
